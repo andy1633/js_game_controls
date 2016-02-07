@@ -20,8 +20,8 @@ window.onload = function () {
     //let times = [ Controls.timePressed(Controls.KEYS.A),
     //              Controls.timePressed(Controls.KEYS.S),
     //              Controls.timePressed(Controls.KEYS.D) ];
-    if(Controls.isPressed(Controls.KEYS.LEFT)) x-=0.05;
-    if(Controls.isPressed(Controls.KEYS.RIGHT)) x+=0.05;
+    if(Controls.isPressed(Controls.KEYS.LEFT)) x-=10 * deltaTime;
+    if(Controls.isPressed(Controls.KEYS.RIGHT)) x+=10 * deltaTime;
     let times = [];
     for (let i = 0; i < 100; i++) times.push((Math.sin(x+0.03*i)+1)/2);
     for (let i = 0; i < times.length; i++) {
